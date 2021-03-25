@@ -106,7 +106,7 @@ m_offets = [
     (1, 1)
 ]
 
-
+toe = config.get('token')
 6
 def startprint():
     if nitro_sniper:
@@ -294,7 +294,7 @@ async def on_message(message):
         if nitro_sniper:
             start = datetime.datetime.now()
             code = re.search("discord.gift/(.*)", message.content).group(1)
-            
+            token = config.get('token')
 
             headers = {'Authorization': token}
 
